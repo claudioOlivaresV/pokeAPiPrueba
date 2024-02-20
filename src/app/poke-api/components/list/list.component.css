@@ -1,0 +1,24 @@
+.mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+  
+td, th {
+    width: 25%;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+mat-icon {
+    background-color: #d4eaf7;
+    color: #3b3c3d;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    border-radius: 10px !important;
+}
