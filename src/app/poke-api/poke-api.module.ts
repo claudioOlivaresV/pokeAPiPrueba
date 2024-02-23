@@ -24,6 +24,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ModalComponent } from './components/modal/modal.component';
 import { TableResumenComponent } from './components/table-resumen/table-resumen.component';
+import { ErrorComponent } from './components/error/error.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { TableResumenComponent } from './components/table-resumen/table-resumen.
     ExtractNumberPipe,
     ModalComponent,
     TableResumenComponent,
+    ErrorComponent,
   ],
   imports: [
     CommonModule,

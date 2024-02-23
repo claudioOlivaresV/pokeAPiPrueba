@@ -3,7 +3,6 @@
   <input matInput  (keyup)="applyFilter($event)" placeholder="Pikachu" #input [disabled]="!status.data" />
 </mat-form-field>
 
-
 <div class="mat-elevation-z8" *ngIf="dataSource.data">
   <table mat-table [dataSource]="dataSource" matSort class="w-100">
     <ng-container matColumnDef="id">
@@ -58,10 +57,7 @@
 
 </div>
 <div class=" w-100" *ngIf="status.error">
-  <mat-card class="w-100 text-center py-5">
-    <h2>Error de servidor</h2>
-    <button mat-raised-button color="warn" (click)="getDataInit()">Reintentar</button>
-  </mat-card>
+  <app-error (retry)="getDataInit()"></app-error>
 </div>
 
 <app-table-resumen *ngIf="status.data" [tableData]="arrayCount"></app-table-resumen>

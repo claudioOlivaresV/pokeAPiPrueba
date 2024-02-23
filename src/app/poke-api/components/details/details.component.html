@@ -42,5 +42,6 @@
     </mat-card-content>
 
   </mat-card>
+  <app-error *ngIf="status.error" (retry)="getPokemon()"></app-error>
 
 
