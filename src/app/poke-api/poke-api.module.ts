@@ -15,6 +15,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { ExtractNumberPipe } from './pipes/extract-number.pipe';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+import {MatListModule} from '@angular/material/list';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {FormControl, FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatButtonModule} from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ModalComponent } from './components/modal/modal.component';
+import { TableResumenComponent } from './components/table-resumen/table-resumen.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +31,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     DetailsComponent,
     MainComponent,
     ExtractNumberPipe,
+    ModalComponent,
+    TableResumenComponent,
   ],
   imports: [
     CommonModule,
@@ -34,7 +45,19 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatPaginatorModule,
     HttpClientModule,
     MatIconModule,
-    MatTooltipModule
+    MatTooltipModule,
+    NgxSkeletonLoaderModule,
+    MatListModule,
+    MatAutocompleteModule,
+    MatProgressSpinnerModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatDialogModule
+
   ],
+  entryComponents: [
+    ModalComponent
+  ]
 })
 export class PokeApiModule {}

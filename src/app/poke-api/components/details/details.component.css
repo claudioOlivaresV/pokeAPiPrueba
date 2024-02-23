@@ -1,8 +1,11 @@
 .example-card {
-    max-width: 400px;
+    margin-top: 55px;
   }
   
   .example-header-image {
-    background-image: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png');
+    background-image: var(--poke-image-url);
     background-size: cover;
+  }
+  .mat-card-image { 
+    width: 95% !important;
   }

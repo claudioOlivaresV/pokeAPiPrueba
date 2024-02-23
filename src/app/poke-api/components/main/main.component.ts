@@ -12,9 +12,9 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
   }
   getName(name: string) {
-    this.showDetails = true;
-    console.log(name);
-    
+    if(name ) {
+      this.showDetails = true;
+    }
   }
 
 }

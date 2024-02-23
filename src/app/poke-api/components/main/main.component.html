@@ -6,12 +6,11 @@
         </a>
     </div>
 </nav>
-<main class="h-100">
+<main class=" pt-3">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-8">
                 <app-list (namePokemon)="getName($event)"></app-list>
-    
             </div>
             <div class="col-4 d-none d-lg-block" >
                 <app-details [inputString]="namePokemon" *ngIf="showDetails"></app-details>
@@ -20,3 +19,4 @@
 
     </div>
 </main>
+
